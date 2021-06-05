@@ -8,8 +8,8 @@
     "since 2017-06"
   ],
   "scripts": {
-    "build": "set REVISION=$(git rev-parse --short HEAD);parcel build index.html --public-url .",
-    "start": "set REVISION=$(git rev-parse --short HEAD);parcel start index.html --https",
+    "build": "export REVISION=$(git rev-parse --short HEAD);parcel build index.html --public-url .",
+    "start": "export REVISION=$(git rev-parse --short HEAD);parcel start index.html --https",
     "fmt": "prettier --write package.json src/*.js src/*.ts *.html"
   },
   "devDependencies": {
